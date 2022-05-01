@@ -1,6 +1,37 @@
 .App {
   text-align: center;
+  background: #00539F;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0px 100px 0px 100px;
 }
+.body{
+  width:600px;
+  margin:0 auto;
+  background-color: orange;
+  border: 5px solid black;
+
+
+}
+
+.h1{
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20 px;
+  color: rgb(224, 136, 20);
+  text-shadow: 3px 3px 1px black;
+}
+p,li{
+  font-size: 16px;
+  text-align: left;
+  margin-left: 0.5%;
+  line-height: 2;
+  
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -9,7 +40,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin 20s linear;
   }
 }
 
