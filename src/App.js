@@ -1,12 +1,22 @@
 import './App.css'; 
-
+import React,{useState} from 'react'
 function App() {
+  const[data,setData]=useState(null)
+  function getData(val)
+  {
+    console.warn(val.target.value)
+    setData(val.target.value)
+  }
   return (
     <div className="App">
       <div className='body'>
       <body>
         <h1>BridgeLabz is Cool</h1>
-        <img src="logo.jpg" width="100px" ></img> 
+        <h2>{data}</h2>
+        <a href="https://www.bridgelabz.com/" target="-main">
+          <img src="logo.jpg" alt="BridgeLabz Website" width="100px" ></img><br></br>
+        </a>
+        <input type="text" onChange={getData} /> 
         <p>At BridgeLabz,We're a Techie community of</p>
         <li>Technologists</li>
         <li>Thinkers</li>
